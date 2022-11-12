@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+#header {
+  background-color: black;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#nav > li {
+  display: inline-block;
+}
+
+#nav li {
+  position: relative;
+}
+
+#nav .subnav {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  list-style-type: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+}
+
+#nav .subnav a {
+  color: black;
+  padding: 0 18px;
+  line-height: 38px;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 50px;
+  padding: 0 25px;
+  display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+  background-color: #ccc;
+  color: black;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#slider {
+  background: url(/assets/img/slider1/slider2.png) top center / cover no-repeat;
+  margin-top: 50px;
+  padding-top: 50%;
+  position: relative;
+}
+
+#slider .text-content {
+  position: absolute;
+  bottom: 50px;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+#content .selection {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 0;
+}
+
+#content .selection-heading {
+  text-align: center;
+  letter-spacing: 5px;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+#content .selection-sub-heading {
+  margin-top: 30px;
+  text-align: center;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.about-text {
+  margin-top: 30px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+.member-list {
+  margin-top: 64px;
+}
+
+.member-item {
+  float: left;
+  width: 33.33333%;
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+.member-img {
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.while {
+  color: #fff !important;
+}
+
+.tour-selection {
+  background-color: black;
+}
+
+.ticket-list {
+  background-color: #fff;
+  margin-top: 35px;
+}
+
+.ticket-list li {
+  padding: 12px;
+  color: #757575;
+  list-style-type: none;
+}
+span.sold-out {
+  background-color: red;
+  color: #fff;
+  padding: 7px;
+  margin-left: 24px;
+}
+
+span.quality {
+  float: right;
+  background-color: black;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  border-radius: 50%;
+  line-height: 24px;
+  text-align: center;
+}
+
+.place-list {
+  margin-top: 45px;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.place-item {
+  float: left;
+  width: 33.33333%;
+  padding: 0 8px 0;
+}
+
+.place-img {
+  width: 100%;
+  height: 180px;
+  display: block;
+}
+
+.place-img:hover {
+  opacity: 0.6;
+}
+
+.place-body {
+  background-color: white;
+  padding: 16px 20px;
+}
+
+button.btn.js-place-buy {
+  background-color: blanchedalmond;
+  border: none;
+  padding: 13px 20px;
+  font-size: 14px;
+  font-weight: 550;
+  margin-top: 20px;
+}
+.btn.js-place-buy:hover {
+  background-color: #757575;
+  color: #fff;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+  width: 800px;
+  min-height: 200px;
+  background-color: #fff;
+  position: relative;
+}
+
+header {
+  height: 86px;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.icon-close {
+  position: absolute;
+  right: 0;
+  padding: 12px;
+}
+
+.icon-close:hover {
+  background-color: #ccc;
+  counter-reset: #fff;
+}
+
+.modal-body {
+  padding: 39px 27px;
+}
+
+label.modal-label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+input.modal-input {
+  width: 100%;
+  padding: 8px 16px;
+  margin-bottom: 24px;
+}
+
+button.modal-button {
+  width: 100%;
+  border: none;
+  padding: 9px 0;
+  font-size: 15px;
+  background-color: aqua;
+}
+
+p.modal-desc {
+  /* margin-top: 25px; */
+  float: right;
+  padding: 30px 0;
+}
+
+.modal-desc a {
+  color: aqua;
+}
